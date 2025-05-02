@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear Pingüino</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<header class="flex">
+    <h5>
+        Gestion de tareas
+    </h5>
+
+</header>
+
+<body class="bg-blue-200 flex items-center justify-center min-h-screen p-4">
+
+  
+    
+  <div class="bg-white p-8 rounded-xl shadow-xl w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+
+    <!-- LADO IZQUIERDO: Vista del Pingüino -->
+    <div class="flex flex-col items-center text-center space-y-6">
+      <!-- GIF del pingüino -->
+      <img src="/WEB/giphy.gif" 
+      alt="GIF PINGUINO" 
+      srcset="mx-auto mb-4 w-32 rounded-xl shadow-lg">
+
+      <!-- Nombre del pingüino -->
+      <div class="w-full text-left">
+        <label class="block font-medium mb-1">Nombre del Pingüino</label>
+        <input type="text" placeholder="Ej: PingüiFercho" class="w-full px-4 py-2 rounded-lg border border-blue-300" />
+      </div>
+
+      <!-- Colores -->
+      <div class="w-full text-left">
+        <label class="block font-medium mb-2">Elige tu Color de Aura</label>
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Repite para 6 colores -->
+          <label class="flex items-center justify-center h-14 w-14 cursor-pointer">
+            <input type="radio" name="color" class="hidden peer" />
+            <div class="h-10 w-10 rounded-full bg-blue-500 peer-checked:ring-4 peer-checked:ring-black"></div>
+          </label>
+          <label class="flex items-center justify-center h-14 w-14 cursor-pointer">
+            <input type="radio" name="color" class="hidden peer" />
+            <div class="h-10 w-10 rounded-full bg-green-500 peer-checked:ring-4 peer-checked:ring-black"></div>
+          </label>
+          <label class="flex items-center justify-center h-14 w-14 cursor-pointer">
+            <input type="radio" name="color" class="hidden peer" />
+            <div class="h-10 w-10 rounded-full bg-red-500 peer-checked:ring-4 peer-checked:ring-black"></div>
+          </label>
+          <label class="flex items-center justify-center h-14 w-14 cursor-pointer">
+            <input type="radio" name="color" class="hidden peer" />
+            <div class="h-10 w-10 rounded-full bg-yellow-300 peer-checked:ring-4 peer-checked:ring-black"></div>
+          </label>
+          <label class="flex items-center justify-center h-14 w-14 cursor-pointer">
+            <input type="radio" name="color" class="hidden peer" />
+            <div class="h-10 w-10 rounded-full bg-purple-500 peer-checked:ring-4 peer-checked:ring-black"></div>
+          </label>
+          <label class="flex items-center justify-center h-14 w-14 cursor-pointer">
+            <input type="radio" name="color" class="hidden peer" />
+            <div class="h-10 w-10 rounded-full bg-pink-400 peer-checked:ring-4 peer-checked:ring-black"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: Seguridad y confirmación -->
+    <div class="flex flex-col justify-center space-y-6 text-left">
+        <!-- Nombre del Papá -->
+        <div>
+          <label class="block font-medium mb-1">Nombre del Papá</label>
+          <input type="text" placeholder="Ej;Paco" class="w-full px-4 py-2 rounded-lg border border-blue-300" />
+        </div>
+  
+        <!-- Nombre de la Mamá -->
+        <div>
+          <label class="block font-medium mb-1">Nombre de la Mamá</label>
+          <input type="text" placeholder="Ej;Maria" class="w-full px-4 py-2 rounded-lg border border-blue-300" />
+        </div>
+    <div class="flex flex-col justify-center space-y-6 text-left">
+      <!-- Contraseña -->
+      <div>
+        <label class="block font-medium mb-1">Contraseña</label>
+        <input type="password" placeholder="********" class="w-full px-4 py-2 rounded-lg border border-blue-300" />
+      </div>
+
+      <!-- Confirmar contraseña -->
+      <div>
+        <label class="block font-medium mb-1">Confirmar Contraseña</label>
+        <input type="password" placeholder="********" class="w-full px-4 py-2 rounded-lg border border-blue-300" />
+      </div>
+
+      <!-- Aceptar reglas -->
+      <div class="flex items-center space-x-2">
+        <input type="checkbox" id="reglas" class="h-4 w-4">
+        <label for="reglas" class="text-sm">Acepto las Reglas de la Academia</label>
+      </div>
+
+      <!-- Botón crear -->
+      <button class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 mt-4 font-bold">
+        ¡Crear Pingüino!
+      </button>
+    </div>
+
+  </div>
+</body>
+</html>
